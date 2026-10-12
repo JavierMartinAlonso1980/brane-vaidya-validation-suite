@@ -1,0 +1,24 @@
+convention:
+  signature: "-++++"
+  epsilon: -1
+  normal_orientation: "decreasing-r"
+  z2_symmetric: true
+  q_positive_means: "injection-into-brane"
+parameters:
+  kappa5_sq: 1.0
+  L: 1.0
+  k: 1
+  lambda_brane: 6.0
+  w: 0.3333333333333333
+  mu_final: 0.2
+  delta_mu: 1.5
+  tau_mu: 3.0
+initial:
+  a: 3.0
+  u: 0.0
+  rho: 2.0
+evolution:
+  t_end: 3.0
+  n: 160
+  rtol: 1.0e-11
+  atol: 1.0e-13

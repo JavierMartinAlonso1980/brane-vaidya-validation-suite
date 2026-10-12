@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brane-vaidya-validation-suite"
+version = "0.2.0"
+description = "Convention-fixed validation suite for Z2 FRW branes in AdS5-Vaidya"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "scipy>=1.11", "sympy>=1.12", "PyYAML>=6.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
